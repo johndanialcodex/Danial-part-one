@@ -8,22 +8,25 @@ button {
     border-radius: 13px; 
     font-size: 16px; 
     cursor: pointer; 
-    width: 100%;
+    width: 100%; /* Buttons are 100% width on mobile and go to auto width on desktop. */
     text-align: left;
 }
+
+/* hover state on the buttons and the navigation links. */
 button:hover {
-    background-color: #ff5c0f; 
+    background-color: #ff5c0f; /*color provided in the style guide.*/ 
     
 }
 .no-bullets {
     list-style-type: none; 
     cursor: grab;
 }
+/* hover state on the buttons and the navigation links. */
 .colorcolor:hover {
-    color: #ff5c0f;
+    color: #ff5c0f; /*color provided in the style guide.*/
     
 }
-
+/* Media queries */
 @media (min-width: 768px) {
     button {
         width: auto; 
@@ -33,19 +36,19 @@ button:hover {
 
 
 body {
-    font-family: 'Roboto';
+    font-family: 'Roboto';  /* font given in the style guide, linked from Google fonts. (Roboto) */
    
 }
 
 header {
-    background-color: #F2F2F2;
+    background-color: #F2F2F2; /*color provided in the style guide.*/
     padding-bottom: 20px;
 }
 .highlightLearnTo {
-    color: #20a8b4;
+    color: #20a8b4; /*color provided in the style guide.*/
 }
 .highlightcode {
-    color: #ff5c0f;
+    color: #ff5c0f; /*color provided in the style guide.*/
 }
 
 .content-wrapper {
@@ -63,8 +66,10 @@ header {
 .image-content {
     display: none;
 }
-
+/* Media queries */
 @media (min-width: 768px) {
+
+    /* Image shows on desktop but not mobile. */
     .image-content {
         display: inline;
     }
@@ -78,6 +83,7 @@ header {
 
 @media (min-width: 768px) {
 
+    /* using flexbox  */
 .header-container {
     display: flex;                  
     justify-content: space-between; 
@@ -90,12 +96,14 @@ h1 {
     margin: 0;                      
 }
 
+/* Links are not underlined. */
 .menu-container {
     display: flex;                  
     align-items: center;            
     gap: 20px;                      
 }
 
+/* Navigation is created by using a <ul>. */
 .no-bullets {
     list-style-type: none; 
     align-items: center;          
